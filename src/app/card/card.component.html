@@ -1,0 +1,15 @@
+<mat-card class="card1" [class]="bigger">
+  <mat-card-title>{{titulo}}</mat-card-title>
+  <mat-card-subtitle [class]="bigger"><article class="simb">$ </article><article class="numb">{{preco}}</article></mat-card-subtitle>
+  <mat-card-content>
+      <ul>
+          <li [class]="bigger">{{storage}} Storage</li>
+          <li [class]="bigger">{{users}} Users Allowed</li>
+          <li [class]="bigger">Send up to {{upto}} GB</li>
+        </ul>
+  </mat-card-content>
+  <mat-card-actions>
+       <button mat-stroked-button class="btn" (click)="fLearn()">LEARN MORE</button>
+  </mat-card-actions>
+</mat-card>
+
